@@ -14,3 +14,50 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.bg {
+	background: #11aaea;
+}
+.logo-header{
+	background: linear-gradient(#53c2f0, #7ed1f4);
+	text-align: center;
+	padding: 20px;
+	img{
+		max-height: 150px;
+		max-width: 150px;
+		height: auto;
+		width: auto;
+	}
+}
+.form{
+	.item{
+		padding-right: 16px;
+		.item-inner{
+			padding-right: 0;
+		}
+		&:last-child{
+			border-bottom: none !important;
+			box-shadow: none !important;
+			.item-inner{
+				border-bottom: 1px solid $list-md-border-color;
+			}
+		}
+		&.item-input-has-focus:last-child,&.input-has-focus:last-child{
+			&:last-child{
+				.item-inner{
+					border-bottom: 1px solid color($colors, primary);
+					box-shadow: inset 0 -1px 0 0 #488aff !important;
+				}
+			}
+		}
+	}
+}
+.section-title{
+	padding: 0 16px;
+	color: #838383;
+}
+.primary-sidebar{
+	.toolbar-background{
+		background: linear-gradient(#7dd1f4, #6dcbf2);
+	}
+}
