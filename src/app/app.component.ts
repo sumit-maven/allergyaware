@@ -7,11 +7,13 @@ import { HomePage } from '../pages/home/home';
 import { TermsPage } from '../pages/terms/terms';
 import { SignupPage } from '../pages/signup/signup';
 import { SigninPage } from '../pages/signin/signin';
+import { AddnewprofilePage } from '../pages/addnewprofile/addnewprofile';
+
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = HomePage;
+  rootPage:any = AddnewprofilePage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
